@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Julieta Mendieta - Interacción con dispositivos móviles - Turno Noche - Comisión 2B - 2025</title>
+</head>
+<body class="overflow-x-hidden">
+    <header>
+        <nav class="navbar navbar-expand-lg w-100 z-1 position-fixed">
+            <div class="container-fluid w-100">
+                <a class="navbar-brand" href="#"><img src="./src/img/logo.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#cuidados">Cuidados para tu planta</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#plantasInterior">Plantas de interior</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#comoElegir">Cómo elegir tu planta</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#formulario">Conocé tu planta ideal</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="video" class="container-fluid px-0 pt-5">
+            <div class="container-fluid px-0 w-100">
+                <video src="./src/video/videojungle.mp4" autoplay loop muted width="100%"></video>
+            </div>
+        </section>
+
+        <section class="container-fluid px-0 cuidados pt-5" id="cuidados">
+            <h2 class="fs-2 col-12 col-lg-10 mx-auto text-center rounded-pill">Cuidados para tu planta de interior</h2>
+            <div id="carouselExampleInterval" class="carousel slide col-12 col-lg-6 mx-auto my-3" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active  h-50" data-bs-interval="5000">
+                    <div class="card w-100">
+                        <img src="src/img/luz.png" class="card-img-top" alt="luz solar">
+                        <div class="card-body">
+                            <h3>Luz solar</h3>
+                            <p class="fw-medium">No necesitan exposición directa al sol, pero sí lugares bien iluminados que les permitan asegurarse los nutrientes, o donde reciban luz suave matutina o vespertina.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item h-50" data-bs-interval="5000">
+                    <div class="card w-100">
+                        <img src="src/img/agua.png" class="card-img-top" alt="agua">
+                        <div class="card-body">
+                            <h3>Agua</h3>
+                            <p class="fw-medium">Tus plantas deben tener la tierra húmeda aunque sin que llegue a estar encharcada. Algunas de ellas se beneficiarán de rociar sus hojas con un poco de agua todos los días.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item h-50" data-bs-interval="5000">
+                    <div class="card w-100">
+                        <img src="src/img/tierra.png" class="card-img-top" alt="tierra">
+                        <div class="card-body">
+                            <h3>Tierra</h3>
+                            <p class="fw-medium">Para la elección de sustrato, con una tierra con un pH equilibrado (6.5-7), que sea un poco porosa para que mantenga el agua del riego, será más que suficiente.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item h-50" data-bs-interval="5000">
+                    <div class="card w-100">
+                        <img src="src/img/temperatura.png" class="card-img-top" alt="temperatura">
+                        <div class="card-body">
+                            <h3>Temperatura</h3>
+                            <p class="fw-medium">Necesitarán temperaturas medias a cálidas pero, sobre todo, estables, para generar buenas condiciones ambientales que permitan que la planta se desarrolle.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item h-50" data-bs-interval="5000">
+                    <div class="card w-100">
+                        <img src="src/img/ventilacion.png" class="card-img-top" alt="ventilación">
+                        <div class="card-body">
+                            <h3>Ventilación</h3>
+                            <p class="fw-medium">Deben ser expuestas al aire fresco al menos una vez al día. Se debe procurar abrir las ventanas y dejar que circule el aire, y en lo posible dejarlas cerca de las mismas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item h-50" data-bs-interval="5000">
+                    <div class="card w-100">
+                        <img src="src/img/limpieza.png" class="card-img-top" alt="limpieza">
+                        <div class="card-body">
+                            <h3>Limpieza</h3>
+                            <p class="fw-medium">La limpieza de las hojas evitará que se acumule el polvo y la suciedad en las mismas, favoreciendo el intercambio de gases. Para esto, se puede usar un paño humedecido.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            </div>
+        </section>
+
+        <section id="plantasInterior" class="plantas container-fluid px-0 pt-5">
+            <div class="container-fluid px-0">
+                <h2 class="fs-2 col-12 col-lg-10 mx-auto text-center rounded-pill">Plantas para interior</h2>
+                <div id="potus" class="contenedorPlantas row gx-2 align-items-center justify-content-center p-3 p-xxl-5">
+                    <div class="col-12 col-xxl-4">
+                        <img class="w-100" src="src/img/potus.png" alt="potus">
+                    </div>
+                    <div class="plantasTexto col-12 col-xxl-4">
+                        <h3 class="text-center">Potus</h3>
+                        <p class="fw-medium">Solo hay que recordar dos cosas: <strong>no regar en exceso</strong> y <strong>evitar la luz solar directa</strong>. Por lo demás, aguanta muy bien y resulta muy decorativo con sus hojas con forma de corazón de color verde brillante y manchas blancas.</p> 
+                        <p class="fw-medium">Es <strong>ideal para colocar en sitios elevados</strong> como estanterías y estantes, ya que se puede dejar que los tallos cuelguen. También se puede utilizar como <strong>planta trepadora</strong> con ayuda de un tutor, en cuyo caso las hojas crecerán a mayor tamaño.</p>
+                        <p class="fw-medium">Además, son plantas que se <strong>replican con mucha facilidad</strong>.</p>
+                    </div>
+                </div>
+                <div id="sansevieria" class="contenedorPlantas row gx-2 align-items-center justify-content-center p-3 p-xxl-5">
+                    <div class="col-12 col-xxl-4 order-xxl-2">
+                        <img class="w-100" src="src/img/sansevieria.png" alt="sansevieria">
+                    </div>
+                    <div class="plantasTexto col-12 col-xxl-4">
+                        <h3 class="text-center">Sansevieria</h3>
+                        <p class="fw-medium">La planta de serpiente, lengua de suegra o sansevieria, de hojas alargadas y carente de tronco, es un auténtico todoterreno. 
+                        <p class="fw-medium"><strong>Resiste de maravilla en zonas sombrías y a la falta de riego e incluso a temperaturas algo frías</strong>.</p>
+                        <p class="fw-medium">Esta planta, además tiene <strong>propiedades purificadoras del aire</strong>.</p>
+                        <p class="fw-medium">Las precauciones que hay que tomar van encaminadas, ante todo, a <strong>evitar que se pudran sus raíces por exceso de riego</strong>. Para ello, se debe utilizar un <strong>buen drenaje</strong> y ante la duda mejor quedarse un poco corto de agua.</p>
+                    </div>
+                </div>
+                <div id="cintas" class="contenedorPlantas row gx-2 align-items-center justify-content-center p-3 p-xxl-5">
+                    <div class="col-12 col-xxl-4">
+                        <img class="w-100" src="src/img/cintas.png" alt="cintas">
+                    </div>
+                    <div class="plantasTexto col-12 col-xxl-4">
+                        <h3 class="text-center">Cintas</h3>
+                        <p class="fw-medium">Las cintas, también llamadas como Mala Madre o Lazo del amor, son también un clásico y, como tal, nunca pasan de moda.</p>
+                        <p class="fw-medium">Son plantas de interior <strong>resistentes</strong> que <strong>se adaptan muy bien a cualquier ambiente</strong>. Crecen mucho y rápido, así que necesitan una <strong>maceta profunda</strong>.</p>
+                        <p class="fw-medium"><strong>No les debe dar la luz del sol de forma directa</strong> y en invierno, basta con que regarlas<strong> una vez a la semana</strong>; en verano será suficiente <strong>cada dos o tres días</strong>.</p>
+                    </div>
+                </div>
+                <div id="monstera" class="contenedorPlantas row gx-2 align-items-center justify-content-center p-3 p-xxl-5">
+                    <div class="col-12 col-xxl-4 order-xxl-2">
+                        <img class="w-100" src="src/img/monstera.png" alt="monstera">
+                    </div>
+                    <div class="plantasTexto col-12 col-xxl-4">
+                        <h3 class="text-center">Monstera</h3>
+                        <p class="fw-medium">Es una de las plantas más de moda ahora mismo, gracias a la tendencia en auge del urban jungle.</p>
+                        <p class="fw-medium">Proveniente de las selvas tropicales de América Latina, en su hábitat natural crece bajo las sombras de los árboles, por lo que <strong>sobrevive sin mucha luz</strong>.</p>
+                        <p class="fw-medium">También conocida como Costilla de Adán, necesita, además de <strong>temperaturas templadas, humedad en el ambiente</strong>, así que se deben rociar sus hojas con agua.</p>
+                        <p class="fw-medium">Es una especie fascinante que en condiciones óptimas puede alcanzar <strong>hasta 2 metros de altura</strong>.</p>
+                    </div>
+                </div>
+                <div id="cactus" class="contenedorPlantas row gx-2 align-items-center justify-content-center p-3 p-xxl-5">
+                    <div class="col-12 col-xxl-4">
+                        <img class="w-100" src="src/img/cactus.png" alt="cactus">
+                    </div>
+                    <div class="plantasTexto col-12 col-xxl-4">
+                        <h3 class="text-center">Cactus</h3>
+                        <p class="fw-medium">Los cactus son plantas que <strong>acumulan agua</strong> para adaptarse al hábitat donde se desarrolla. Además, <strong>transforman sus hojas en espinas</strong> para protegerse de los animales y no perder el agua que acumulan en el tronco.</p>
+                        <p class="fw-medium">Para su cuidado, es necesario <strong>colocarlas a la luz</strong>, ya que necesitan varias horas al día, donde <strong>no corra mucho el aire</strong> y <strong>regarlas moderadamente</strong>.</p>
+                        <p class="fw-medium">Esto último depende de la estación del año: en invierno se debe reducir, mientras que en verano se aumenta hasta llegar a regarla cada 4 u 8 días; en primavera, por ejemplo, es cada 10 o 12 días. Todo esto puede cambiar <strong>según la zona de residencia</strong>.</p>
+                    </div>
+                </div>
+                <div id="crasas" class="contenedorPlantas row gx-2 align-items-center justify-content-center p-3 p-xxl-5">
+                    <div class="col-12 col-xxl-4 order-xxl-2">
+                        <img class="w-100" src="src/img/crasas.png" alt="crasas">
+                    </div>
+                    <div class="plantasTexto col-12 col-xxl-4">
+                        <h3 class="text-center">Crasas</h3>
+                        <p class="fw-medium">Al igual que los cactus, las crasas provienen de la familia de las suculentas. Sin embargo, esta planta <strong>acumula el agua en las hojas</strong> y no en el tronco, por ello no tienen espinas.</p>
+                        <p class="fw-medium">Cuanta más agua reciban las crasas, más carnosas y bonitas se convierten sus hojas. </p>
+                        <p class="fw-medium">¿Cómo saber si necesitan ser regadas? Lo más correcto es introducir un dedo y <strong>ver si el sustrato está seco o húmedo</strong>. Asimismo, en invierno siempre hay que <strong>disminuir los riegos</strong>.</p>
+                        <p class="fw-medium">Son perfectas para decorar la casa ya que tienen <strong>muy buena adaptación a los interiores</strong>, y son las <strong>plantas de sombra por excelencia</strong>.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="comoElegir" class="container-fluid px-0 pt-5">
+            <div class="eleccion container-fluid px-0">
+                <h2 class="fs-2 col-12 col-lg-10 mx-auto text-center rounded-pill">Cómo elegir tu planta</h2>
+                <div class="row align-items-center">
+                    <div class="d-none d-xl-flex col-md-2 col-xxl-3 justify-content-center">
+                        <img src="src/img/sansevieria2.png" alt="sansevieria">
+                    </div>
+                    <div class="accordion col-12 col-md-6 mx-auto" id="accordionExample">
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Espacios y decoración
+                            </button>
+                            </h3>
+                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p class="fw-medium">A la hora de elegir la planta perfecta es importante tener en cuenta el <strong>espacio disponible</strong> y el <strong>estilo de la decoración</strong> para conservar cierta <strong>coherencia</strong> y que todo esté en <strong>buena armonía.</strong></p>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Tiempo disponible
+                            </button>
+                            </h3>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p class="fw-medium">Sin duda, otro de los factores a tener en cuenta a la hora de elegir la planta perfecta. Al escoger la especie, dedicar un rato a <strong>leer sobre sus requerimientos de riego y humedad</strong> siempre es buena idea, para saber si podrán ser cumplidos. Afortunadamente, hoy en día existen soluciones como <strong>depósitos de riego, geles de hidratación y macetas con autorriego</strong> que pueden facilitar mucho las tareas cotidianas. ¡Eso sí! Con riego automático o sin él, todas las plantas <strong>necesitan tiempo y mimo.</strong></p>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Mascotas y plantas
+                            </button>
+                            </h3>
+                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p class="fw-medium">Hay unas cuantas especies de plantas de interior <strong>tóxicas para gatos y perros</strong>. Es muy importante verificar este dato si hay mascotas en la casa y tienden a morder las plantas. Algunas especies a evitar, son: <strong>lirios</strong>, que son nefrotóxicos para gatos; <strong>amoena o planta del manto</strong>, que causa irritación oral; <strong>aloe vera y helecho de Boston</strong> , que causan malestar estomacal y diarrea; <strong>el potus</strong>, que causa irritación en la boca y tracto gastrointestinal.</p>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-none d-xl-flex col-md-2 col-xxl-3 justify-content-center">
+                        <img src="src/img/monstera2.png" alt="monstera">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="formulario" class="container-fluid px-0 pt-5">
+            <h2 class="fs-2 col-12 col-lg-10 mx-auto text-center rounded-pill">Conocé tu planta ideal</h2>
+            <p class="text-center col-12 col-xxl-6 mx-auto px-5 fw-medium">Dejanos tus datos y preferencias, y te enviaremos información sobre las plantas de interior que mejor se adaptarán a tu casa.</p>
+            <form class="w-75 mx-auto row" action="">
+                <div class="preferencias col-12 col-lg-6">
+                    <div class="seleccion container-fluid px-0">
+                        <p class="fw-bold">Seleccioná las mascotas que tengas en tu casa</p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                            <label class="form-check-label" for="checkDefault">
+                                Perros
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                            <label class="form-check-label" for="checkDefault">
+                                Gatos
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                            <label class="form-check-label" for="checkDfeault">
+                                Conejos
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                            <label class="form-check-label" for="checkDfeault">
+                                Otros
+                            </label>
+                        </div>
+                    </div>
+                    <div class="radio container-fluid px-0 my-3">
+                        <p class="fw-bold">¿A cuánta luz natural estarán expuestas las plantas?</p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+                            <label class="form-check-label" for="radioDefault1">
+                                No estarán expuestas a casi nada de luz natural
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+                            <label class="form-check-label" for="radioDefault1">
+                                Estarán expuestas sólo por la mañana
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+                            <label class="form-check-label" for="radioDefault1">
+                                Estarán expuestas sólo por la tarde
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2" checked>
+                            <label class="form-check-label" for="radioDefault2">
+                                Estarán expuestas a luz natural todo el día
+                            </label>
+                        </div>
+                    </div>
+                    <div class="radio container-fluid px-0 my-3">
+                        <p class="fw-bold">¿De cuánto tiempo disponés para cuidarlas?</p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+                            <label class="form-check-label" for="radioDefault1">
+                                Estoy casi todo el día fuera de casa, no dispongo de mucho tiempo
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+                            <label class="form-check-label" for="radioDefault1">
+                                Poco, pero me las arreglo
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+                            <label class="form-check-label" for="radioDefault1">
+                                Tengo bastante tiempo para dedicarles
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2" checked>
+                            <label class="form-check-label" for="radioDefault2">
+                                Mucho tiempo
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="datos container-fluid px-0 col-12 col-lg-4">
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label fw-bold">Nombre</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label fw-bold">Mail</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="juliagarcia@ejemplo.com">
+                    </div>
+                    <button type="submit" class="d-block w-50 mx-auto rounded my-5">Enviame los resultados</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    
+    <footer class="pt-3">
+        <div class="rrss text-center">
+            <a class="px-3" href="https://instagram.com" target="_blank"><img src="./src/img/instagram.svg" alt="instagram"></a>
+            <a class="px-3" href="https://facebook.com" target="_blank"><img src="./src/img/facebook.svg" alt="linkedin"></a>
+            <a class="px-3" href="https://linkedin.com" target="_blank"><img src="./src/img/linkedin.svg" alt="facebook"></a>
+        </div>
+        <div class="datos row">
+            <p class="col-12 col-xxl-2 text-center">Julieta Mendieta.</p>
+            <p class="col-12 col-xxl-4 text-center">Materia: Interacción con dispositivos móviles.</p>
+            <p class="col-12 col-xxl-2 text-center">Turno Noche.</p>
+            <p class="col-12 col-xxl-2 text-center">Comisión 2B.</p>
+            <p class="col-12 col-xxl-2 text-center">Año de cursada: 2025.</p>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

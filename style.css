@@ -1,0 +1,72 @@
+.navbar{
+    background-color: #F8FFD0;
+}
+
+.navbar li a{
+    color: #515F08;
+}
+
+.navbar li a:hover{
+    color: #F8FFD0;
+    background-color: #515F08;
+    border-radius: 10px;
+}
+
+.navbar img{
+    height: 50px;
+}
+
+.navbar-toggler{
+    --bs-navbar-toggler-border-color: #F8FFD0;
+}
+
+.navbar-toggler-icon{
+    background-color: #F8FFD0;
+}
+
+body{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(./src/img/background.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.plantas h2, .cuidados h2, .eleccion h2, #formulario h2{
+    color: #F8FFD0;
+    background-color: #515F08;
+}
+
+
+.card-body h3, .card-body p{
+    color: #515F08;
+}
+
+#formulario{
+    color: #515F08;
+}
+
+button{
+    background-color: #515F08;
+    color: #F8FFD0;
+}
+
+.plantasTexto{
+    color: #515F08;
+}
+
+.accordion-item button{
+    --bs-accordion-btn-bg: #F8FFD0;
+    --bs-accordion-active-bg: #515F08;
+    --bs-accordion-btn-color: #323A0D;
+    --bs-accordion-active-color: #F8FFD0;
+    --bs-accordion-btn-focus-box-shadow: #323A0D;
+}
+
+.accordion-body p, footer p{
+    color: #515F08;
+}
+
+footer{
+    background-color: #F8FFD0;
+}
+
