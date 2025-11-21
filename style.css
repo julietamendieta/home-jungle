@@ -1,9 +1,15 @@
+*{
+    --font-1: "Marmelad", sans-serif;
+    --font-2: "Fredoka", sans-serif;
+}
+
 .navbar{
     background-color: #F8FFD0;
 }
 
 .navbar li a{
     color: #515F08;
+    font-family: var(--font-1);
 }
 
 .navbar li a:hover{
@@ -24,6 +30,10 @@
     background-color: #F8FFD0;
 }
 
+p, label{
+    font-family: var(--font-2);
+}
+
 body{
     background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(./src/img/background.svg);
     background-position: center;
@@ -31,11 +41,24 @@ body{
     background-repeat: no-repeat;
 }
 
+
+@keyframes animate-background {
+    0% {
+        background-position: 0 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
 .plantas h2, .cuidados h2, .eleccion h2, #formulario h2{
     color: #F8FFD0;
     background-color: #515F08;
 }
 
+h3{
+    font-family: var(--font-1);
+}
 
 .card-body h3, .card-body p{
     color: #515F08;
@@ -69,4 +92,3 @@ button{
 footer{
     background-color: #F8FFD0;
 }
-
