@@ -42,18 +42,9 @@ body{
 }
 
 
-@keyframes animate-background {
-    0% {
-        background-position: 0 50%;
-    }
-    100% {
-        background-position: 100% 50%;
-    }
-}
-
 .plantas h2, .cuidados h2, .eleccion h2, #formulario h2{
-    color: #F8FFD0;
-    background-color: #515F08;
+    color: #515F08;
+
 }
 
 h3{
