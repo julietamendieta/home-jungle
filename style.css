@@ -83,3 +83,22 @@ button{
 footer{
     background-color: #F8FFD0;
 }
+
+.contenedorPlantas{
+    position: relative;  
+}
+
+.plantasTexto{
+    background-color: #F8FFD0;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+
+
+
