@@ -10,12 +10,14 @@
 .navbar li a{
     color: #515F08;
     font-family: var(--font-1);
+    border-bottom: 3px solid #F8FFD0;
 }
 
 .navbar li a:hover{
-    color: #F8FFD0;
-    background-color: #515F08;
-    border-radius: 10px;
+    border-bottom: 3px solid #515F08;
+    transform: scale(1.1);
+    color: #515F08;
+    transition: all 0.3s;
 }
 
 .navbar img{
@@ -28,6 +30,10 @@
 
 .navbar-toggler-icon{
     background-color: #F8FFD0;
+}
+
+.nav-item img{
+    width: 30px;
 }
 
 p, label{
