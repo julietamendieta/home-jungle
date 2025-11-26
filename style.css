@@ -1,6 +1,6 @@
 *{
-    --font-1: "Marmelad", sans-serif;
-    --font-2: "Fredoka", sans-serif;
+    --font-2: "Quicksand", sans-serif;
+    --font-1: "Playwrite It Moderna", sans-serif;
 }
 
 .navbar{
@@ -50,7 +50,7 @@ body{
 
 .plantas h2, .cuidados h2, .eleccion h2, #formulario h2{
     color: #515F08;
-
+    font-family: var(--font-1);
 }
 
 h3{
@@ -61,6 +61,10 @@ h3{
     color: #515F08;
 }
 
+.card-body p{
+    font-size: 18px;
+}
+
 #formulario{
     color: #515F08;
 }
@@ -68,10 +72,6 @@ h3{
 button{
     background-color: #515F08;
     color: #F8FFD0;
-}
-
-.plantasTexto{
-    color: #515F08;
 }
 
 .accordion-item button{
@@ -94,32 +94,101 @@ footer{
     position: relative;  
 }
 
-.plantasTexto{
-    background-color: #F8FFD0;
-    border-radius: 10px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 0;
-    overflow: hidden;
-    transition: all 0.3s;
-}
-
 .img-container{
     position: relative;
 }
 
-.img-container a{
+.img-container h3{
+    position: absolute;
+    background-color: #F8FFD0;
+    top: 0;
+    text-align: center;
+    color: #515F08;
+}
+
+.img-container .flecha{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.plantasTexto{
     position: absolute;
     top: 0;
     left: 0;
     background-color: #F8FFD0;
-    font-size: 24px;
+    font-size: 18px;
     text-decoration: none;
     color: #515F08;
     font-weight: 600;
+    height: 0;
+    opacity: 0;
+    transition: all 0.5s;
 }
 
-.plantasTexto:target{
-    height: 100%;
+.accordion-body p{
+    font-size: 18px;
+}
+
+.contenedorPlantas:hover{
+    .plantasTexto{
+        height: 100%;
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .plantasTexto{
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .plantasTexto, .accordion-body p, .card-body p{
+        font-size: 20px;
+    }
+    .plantas h2, .cuidados h2, .eleccion h2, #formulario h2{
+        font-size: 50px !important;
+    }
+}
+
+@media screen and (min-width: 1441px) {
+    .plantasTexto, .accordion-body p, .card-body p{
+        font-size: 24px;
+    }
+    .plantas h2, .cuidados h2, .eleccion h2, #formulario h2{
+        font-size: 80px !important;
+    }
+}
+
+@keyframes rotar{
+    0%{
+        transform: rotate(10deg);
+    }
+    50%{
+        transform: rotate(-10deg);
+    }
+    100%{
+        transform: rotate(10deg);
+    }
+}
+
+@keyframes rotar2{
+    0%{
+        transform: rotate(-10deg);
+    }
+    50%{
+        transform: rotate(10deg);
+    }
+    100%{
+        transform: rotate(-10deg);
+    }
+}
+
+.imagen-acordeon{
+    animation: rotar 1s infinite;
+}
+
+.imagen-acordeon2{
+    animation: rotar2 1s infinite;
 }
