@@ -41,9 +41,15 @@
     </header>
     
     <main>
-        <section id="video" class="container-fluid px-0 pt-5">
-            <div class="container-fluid px-0 w-100">
-                <video src="./src/video/videojungle.mp4" autoplay loop muted width="100%"></video>
+        <section id="hero" class="container-fluid px-0 pt-5">
+            <div class="video position-relative">
+                <div class="container-fluid px-0">
+                    <video src="./src/video/videojungle.mp4" autoplay loop muted width="100%"></video>
+                </div>
+                <div class="contenedor-titulo position-absolute top-0 start-0 w-100 h-100 d-flex flex-column align-items-center justify-content-center">
+                    <h1>Home Jungle</h1>
+                    <p>Todo sobre tus plantas</p>
+                </div>
             </div>
         </section>
 
@@ -127,22 +133,22 @@
             <div class="container-fluid px-0">
                 <div class="containerTitulo d-flex align-items-center my-lg-5">
                     <img class="rama-titulo d-none d-md-flex col-md-4 col-lg-3" src="./src/img/rama.gif" alt="rama">
-                    <h2 class="px-1">Plantas para interior</h2>
+                    <h2 class="px-1 py-md-5 py-lg-0">Plantas para interior</h2>
                 </div>
                 <img class="rama-titulo col-10 d-md-none mb-4" src="./src/img/rama.gif" alt="rama">
-                <div class="container-fluid row gy-3 justify-content-center mx-auto col-xl-10">
+                <div class="container-fluid row gy-3 justify-content-center mx-auto col-lg-10">
                     <div class="contenedorPlantas col-12 col-lg-6 col-xxl-8 p-0 px-md-2" data-aos="flip-left" data-aos-duration="2000">
-                        <div class="img-container w-100 mx-auto">
+                        <div class="img-container position-relative w-100">
                             <picture class="w-100">
                                 <source class="w-100" srcset="./src/img/potusvertical.png" media="(max-width: 426px)">
                                 <source class="w-100" srcset="./src/img/potus.png" media="(max-width: 768px)">
                                 <source class="w-100" srcset="./src/img/potusvertical.png" media="(max-width: 1024px)">
                                 <img class="w-100" src="./src/img/potus.png" alt="potus">
                             </picture>
-                            <h3 class="w-100 text-center rounded-top">Potus</h3>
-                            <img class="flecha d-xl-none" src="./src/img/arrowdown.png" alt="flecha">                        
+                            <h3 class="w-100 text-center position-absolute top-0 rounded-top">Potus</h3>
+                            <img class="flecha position-absolute top-0 end-0 d-xl-none" src="./src/img/arrowdown.png" alt="flecha">                        
                         </div>
-                        <div id="potus" class="plantasTexto px-3 rounded">
+                        <div id="potus" class="plantasTexto position-absolute top-0 start-0 d-flex flex-column justify-content-center px-3 rounded">
                             <h3 class="text-center">Potus</h3>
                             <p class="fw-medium">Solo hay que recordar dos cosas: <strong>no regar en exceso</strong> y <strong>evitar la luz solar directa</strong>. Por lo demás, aguanta muy bien y resulta muy decorativo.</p> 
                             <p class="fw-medium">Es <strong>ideal para colocar en sitios elevados</strong>, ya que se puede dejar que los tallos cuelguen. También se puede utilizar como <strong>planta trepadora</strong> con ayuda de un tutor, en cuyo caso las hojas crecerán a mayor tamaño.</p>
@@ -150,15 +156,15 @@
                         </div>
                     </div>
                     <div class="contenedorPlantas col-12 col-md-6 col-lg-6 col-xxl-4 p-0 px-md-2 px-xxl-1" data-aos="flip-left" data-aos-duration="2000">
-                        <div class="img-container w-100">
+                        <div class="img-container position-relative w-100">
                             <picture class="w-100">
                                 <source class="w-100" srcset="./src/img/sansevieriavertical.png" media="(max-width: 2600px)">
                                 <img class="w-100" src="./src/img/sansevieria.png" alt="sansevieria">
                             </picture>
-                            <h3 class="w-100 text-center rounded-top">Sansevieria</h3>
-                            <img class="flecha d-xl-none" src="./src/img/arrowdown.png" alt="flecha">
+                            <h3 class="w-100 text-center position-absolute top-0 rounded-top">Sansevieria</h3>
+                            <img class="flecha position-absolute top-0 end-0 d-xl-none" src="./src/img/arrowdown.png" alt="flecha">
                         </div>
-                        <div id="sansevieria" class="plantasTexto px-3 rounded">
+                        <div id="sansevieria" class="plantasTexto position-absolute top-0 start-0 d-flex flex-column justify-content-center px-3 rounded">
                             <h3 class="text-center">Sansevieria</h3>
                             <p class="fw-medium">La planta de serpiente, lengua de suegra o sansevieria, de hojas alargadas y carente de tronco, es un auténtico todoterreno. 
                             <p class="fw-medium"><strong>Resiste de maravilla en zonas sombrías y a la falta de riego e incluso a temperaturas algo frías</strong>.</p>
@@ -166,17 +172,17 @@
                         </div>
                     </div>
                     <div class="contenedorPlantas col-12 col-md-6 col-lg-12 col-xxl-4 p-0 px-md-2 px-xxl-1" data-aos="flip-left" data-aos-duration="2000">
-                        <div class="img-container w-100">
+                        <div class="img-container position-relative w-100">
                             <picture class="w-100">
                                 <source class="w-100" srcset="./src/img/cintasvertical.png" media="(max-width: 768px)">
                                 <source class="w-100" srcset="./src/img/cintas.png" media="(max-width: 1024px)">
                                 <source class="w-100" srcset="./src/img/cintasvertical.png" media="(max-width: 2600px)">
                                 <img class="w-100" src="./src/img/cintas.png" alt="cintas">
                             </picture>
-                            <h3 class="w-100 text-center rounded-top">Cintas</h3>
-                            <img class="flecha d-xl-none" src="./src/img/arrowdown.png" alt="flecha">
+                            <h3 class="w-100 text-center position-absolute top-0 rounded-top">Cintas</h3>
+                            <img class="flecha position-absolute top-0 end-0 d-xl-none" src="./src/img/arrowdown.png" alt="flecha">
                         </div>
-                        <div id="cintas" class="plantasTexto px-3 rounded">
+                        <div id="cintas" class="plantasTexto position-absolute top-0 start-0 d-flex flex-column justify-content-center px-3 rounded">
                             <h3 class="text-center">Cintas</h3>
                             <p class="fw-medium">Las cintas, también llamadas como Mala Madre o Lazo del amor, son también un clásico y, como tal, nunca pasan de moda.</p>
                             <p class="fw-medium">Son plantas de interior <strong>resistentes</strong> que <strong>se adaptan muy bien a cualquier ambiente</strong>. Crecen mucho y rápido, así que necesitan una <strong>maceta profunda</strong>.</p>
@@ -184,17 +190,17 @@
                         </div>
                     </div>
                     <div class="contenedorPlantas col-12 col-lg-6 col-xxl-8 p-0 px-md-2" data-aos="flip-left" data-aos-duration="2000">
-                        <div class="img-container w-100">
+                        <div class="img-container position-relative w-100">
                             <picture class="w-100">
                                 <source class="w-100" srcset="./src/img/monsteravertical.png" media="(max-width: 426px)">
                                 <source class="w-100" srcset="./src/img/monstera.png" media="(max-width: 768px)">
                                 <source class="w-100" srcset="./src/img/monsteravertical.png" media="(max-width: 1024px)">
                                 <img class="w-100" src="./src/img/monstera.png" alt="monstera">
                             </picture>
-                            <h3 class="w-100 text-center rounded-top">Monstera</h3>
-                            <img class="flecha d-xl-none" src="./src/img/arrowdown.png" alt="flecha">
+                            <h3 class="w-100 text-center position-absolute top-0 rounded-top">Monstera</h3>
+                            <img class="flecha position-absolute top-0 end-0 d-xl-none" src="./src/img/arrowdown.png" alt="flecha">
                         </div>
-                        <div id="monstera" class="plantasTexto px-3 rounded">
+                        <div id="monstera" class="plantasTexto position-absolute top-0 start-0 d-flex flex-column justify-content-center px-3 rounded">
                             <h3 class="text-center">Monstera</h3>
                             <p class="fw-medium">Es una de las plantas más de moda ahora mismo, gracias a la tendencia en auge del urban jungle. En su hábitat natural crece bajo las sombras de los árboles, por lo que <strong>sobrevive sin mucha luz</strong>.</p>
                             <p class="fw-medium">También conocida como Costilla de Adán, necesita, además de <strong>temperaturas templadas, humedad en el ambiente</strong>, así que se deben rociar sus hojas con agua.</p>
@@ -202,15 +208,15 @@
                         </div>
                     </div>
                     <div class="contenedorPlantas col-12 col-md-6 col-lg-6 col-xxl-8 p-0 px-md-2" data-aos="flip-left" data-aos-duration="2000">
-                        <div class="img-container w-100">
+                        <div class="img-container position-relative w-100">
                             <picture class="w-100">
                                 <source class="w-100" srcset="./src/img/cactusvertical.png" media="(max-width: 1024px)">
                                 <img class="w-100" src="./src/img/cactus.png" alt="cactus">
                             </picture>
-                            <h3 class="w-100 text-center rounded-top">Cactus</h3>
-                            <img class="flecha d-xl-none" src="./src/img/arrowdown.png" alt="flecha">
+                            <h3 class="w-100 text-center position-absolute top-0 rounded-top">Cactus</h3>
+                            <img class="flecha position-absolute top-0 end-0 d-xl-none" src="./src/img/arrowdown.png" alt="flecha">
                         </div>
-                        <div id="cactus" class="plantasTexto px-3 rounded">
+                        <div id="cactus" class="plantasTexto position-absolute top-0 start-0 d-flex flex-column justify-content-center px-3 rounded">
                             <h3 class="text-center">Cactus</h3>
                             <p class="fw-medium">Son plantas que <strong>acumulan agua</strong> para adaptarse al hábitat donde se desarrolla. Además, <strong>transforman sus hojas en espinas</strong> para protegerse de los animales y no perder el agua que acumulan en el tronco.</p>
                             <p class="fw-medium">Es necesario <strong>colocarlas a la luz</strong>, ya que necesitan varias horas al día, donde <strong>no corra mucho el aire</strong> y <strong>regarlas moderadamente</strong>.</p>
@@ -218,17 +224,17 @@
                         </div>
                     </div>
                     <div class="contenedorPlantas col-12 col-md-6 col-lg-12 col-xxl-4 p-0 px-md-2 px-xxl-1" data-aos="flip-left" data-aos-duration="2000">
-                        <div class="img-container w-100">
+                        <div class="img-container position-relative w-100">
                             <picture class="w-100">
                                 <source class="w-100" srcset="./src/img/crasasvertical.png" media="(max-width: 768px)">
                                 <source class="w-100" srcset="./src/img/crasas.png" media="(max-width: 1024px)">
                                 <source class="w-100" srcset="./src/img/crasasvertical.png" media="(max-width: 2600px)">
                                 <img class="w-100" src="./src/img/crasas.png" alt="crasas">
                             </picture>
-                            <h3 class="w-100 text-center rounded-top">Crasas</h3>
-                            <img class="flecha d-xl-none" src="./src/img/arrowdown.png" alt="flecha">
+                            <h3 class="w-100 text-center position-absolute top-0 rounded-top">Crasas</h3>
+                            <img class="flecha position-absolute top-0 end-0 d-xl-none" src="./src/img/arrowdown.png" alt="flecha">
                         </div>
-                        <div id="crasas" class="plantasTexto px-3 rounded">
+                        <div id="crasas" class="plantasTexto position-absolute top-0 start-0 d-flex flex-column justify-content-center px-3 rounded">
                             <h3 class="text-center">Crasas</h3>
                             <p class="fw-medium">Provienen de la familia de las suculentas. Sin embargo, esta planta <strong>acumula el agua en las hojas</strong> y no en el tronco, por ello no tienen espinas.</p>
                             <p class="fw-medium">¿Cómo saber si necesitan ser regadas? Lo más correcto es introducir un dedo y <strong>ver si el sustrato está seco o húmedo</strong>. Asimismo, en invierno siempre hay que <strong>disminuir los riegos</strong>.</p>
@@ -250,7 +256,7 @@
             <div class="eleccion container-fluid px-0">
                 <div class="containerTitulo d-flex align-items-center my-lg-5">
                     <img class="rama-titulo d-none d-md-flex col-md-4 col-lg-3" src="./src/img/rama.gif" alt="rama">
-                    <h2 class="px-1">Cómo elegir tu planta</h2>
+                    <h2 class="px-1 py-md-5 py-lg-0">Cómo elegir tu planta</h2>
                 </div>
                 <img class="rama-titulo col-10 d-md-none mb-4" src="./src/img/rama.gif" alt="rama">
                 <div class="row mx-auto align-items-center w-100">
@@ -305,10 +311,10 @@
         <section id="formulario" class="container-fluid px-0 pt-5">
             <div class="containerTitulo d-flex align-items-center my-lg-5">
                 <img class="rama-titulo d-none d-md-flex col-md-4 col-lg-3" src="./src/img/rama.gif" alt="rama">
-                <h2 class="px-1">Conocé tu planta ideal</h2>
+                <h2 class="px-1 py-md-5 py-lg-0">Conocé tu planta ideal</h2>
             </div>
             <img class="rama-titulo col-10 d-md-none mb-4" src="./src/img/rama.gif" alt="rama">
-            <form class="col-12 col-lg-10 mx-auto px-2 row" data-aos="fade-up" data-aos-duration="3000" action="">
+            <form class="col-12 col-lg-10 mx-auto px-2 row" data-aos="fade-up" data-aos-duration="2000">
                 <div class="datos container-fluid px-0 col-12 col-lg-4">
                     <p class="text-center col-12 mx-auto px-5 px-lg-0 fw-medium">Dejanos tus datos y preferencias, y te enviaremos información sobre las plantas de interior que mejor se adaptarán a tu casa.</p>
                     <div class="mb-3">

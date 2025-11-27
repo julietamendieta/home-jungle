@@ -65,10 +65,6 @@
     color: var(--color-1);
 }
 
-.navbar img{
-    height: 70px;
-}
-
 .navbar-toggler{
     --bs-navbar-toggler-border-color: var(--color-2);
 }
@@ -79,6 +75,20 @@
 
 .nav-item img{
     width: 30px;
+}
+
+.contenedor-titulo{
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+}
+
+.contenedor-titulo h1{
+    color: var(--color-2);
+    font-family: var(--font-1);
+}
+
+.contenedor-titulo p{
+    color: var(--color-2);
+    font-family: var(--font-2);
 }
 
 p, label{
@@ -105,14 +115,6 @@ h3{
 
 .card-body h3, .card-body p{
     color: var(--color-1);
-}
-
-.card-body p{
-    font-size: 18px;
-}
-
-#formulario p{
-    font-size: 18px;
 }
 
 .card-body{
@@ -143,50 +145,19 @@ footer{
     background-color: var(--color-2);
 }
 
-.contenedorPlantas{
-    position: relative;  
-}
-
-.img-container{
-    position: relative;
-}
-
 .img-container h3{
-    position: absolute;
     background-color: var(--color-2);
-    top: 0;
-    text-align: center;
     color: var(--color-1);
 }
 
-.img-container .flecha{
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
 .plantasTexto{
-    position: absolute;
-    top: 0;
-    left: 0;
     background-color: var(--color-2);
-    font-size: 18px;
     text-decoration: none;
     color: var(--color-1);
     font-weight: 600;
     height: 0;
     opacity: 0;
     transition: all 0.5s;
-}
-
-.plantasTexto{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.accordion-body p{
-    font-size: 18px;
 }
 
 .contenedorPlantas:hover{
@@ -210,35 +181,20 @@ footer{
     background-position: center;
 }
 
-@media screen and (max-width: 426px) {
-    .plantasTexto{
-        font-size: 14px;
-    }
-}
-
-@media screen and (min-width: 768px){
-    .plantas h2, .cuidados h2, .eleccion h2, #formulario h2{
-        font-size: 34px;
-    }
+@media screen and (max-width: 766px) {
     .navbar img{
         height: 50px;
     }
 }
 
-@media screen and (min-width: 1024px) {
-    .plantasTexto, .accordion-body p, .card-body p, #formulario p{
-        font-size: 20px;
-    }
-    .plantas h2, .cuidados h2, .eleccion h2, #formulario h2{
-        font-size: 40px;
+@media screen and (min-width: 767px){
+    .navbar img{
+        height: 70px;
     }
 }
 
-@media screen and (min-width: 1441px) {
-    .plantasTexto, .accordion-body p, .card-body p, #formulario p{
-        font-size: 24px;
-    }
-    .plantas h2, .cuidados h2, .eleccion h2, #formulario h2{
-        font-size: 80px;
+@media screen and (min-width: 1024px) {
+    .navbar img{
+        height: 50px;
     }
 }
