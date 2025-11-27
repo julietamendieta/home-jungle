@@ -93,7 +93,7 @@ body{
 }
 
 
-.plantas h2, .cuidados h2, .eleccion h2, #formulario h2{
+.plantas h2, .cuidados h2, .eleccion h2, #formulario h2, #videoExplicativo h2{
     color: var(--color-1);
     font-family: var(--font-1);
     animation: salto 2s infinite;
