@@ -1,164 +1,9 @@
 *{
     --font-2: "Quicksand", sans-serif;
     --font-1: "Playwrite It Moderna", sans-serif;
-}
-
-.navbar{
-    background-color: #F8FFD0;
-}
-
-.navbar li a{
-    color: #515F08;
-    font-family: var(--font-1);
-    border-bottom: 3px solid #F8FFD0;
-}
-
-.navbar li a:hover{
-    border-bottom: 3px solid #515F08;
-    transform: scale(1.1);
-    color: #515F08;
-    transition: all 0.3s;
-}
-
-.navbar img{
-    height: 50px;
-}
-
-.navbar-toggler{
-    --bs-navbar-toggler-border-color: #F8FFD0;
-}
-
-.navbar-toggler-icon{
-    background-color: #F8FFD0;
-}
-
-.nav-item img{
-    width: 30px;
-}
-
-p, label{
-    font-family: var(--font-2);
-}
-
-body{
-    background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(./src/img/background.svg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-
-.plantas h2, .cuidados h2, .eleccion h2, #formulario h2{
-    color: #515F08;
-    font-family: var(--font-1);
-}
-
-h3{
-    font-family: var(--font-1);
-}
-
-.card-body h3, .card-body p{
-    color: #515F08;
-}
-
-.card-body p{
-    font-size: 18px;
-}
-
-#formulario{
-    color: #515F08;
-}
-
-button{
-    background-color: #515F08;
-    color: #F8FFD0;
-}
-
-.accordion-item button{
-    --bs-accordion-btn-bg: #F8FFD0;
-    --bs-accordion-active-bg: #515F08;
-    --bs-accordion-btn-color: #323A0D;
-    --bs-accordion-active-color: #F8FFD0;
-    --bs-accordion-btn-focus-box-shadow: #323A0D;
-}
-
-.accordion-body p, footer p{
-    color: #515F08;
-}
-
-footer{
-    background-color: #F8FFD0;
-}
-
-.contenedorPlantas{
-    position: relative;  
-}
-
-.img-container{
-    position: relative;
-}
-
-.img-container h3{
-    position: absolute;
-    background-color: #F8FFD0;
-    top: 0;
-    text-align: center;
-    color: #515F08;
-}
-
-.img-container .flecha{
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-.plantasTexto{
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #F8FFD0;
-    font-size: 18px;
-    text-decoration: none;
-    color: #515F08;
-    font-weight: 600;
-    height: 0;
-    opacity: 0;
-    transition: all 0.5s;
-}
-
-.accordion-body p{
-    font-size: 18px;
-}
-
-.contenedorPlantas:hover{
-    .plantasTexto{
-        height: 100%;
-        opacity: 1;
-    }
-}
-
-@media screen and (max-width: 426px) {
-    .plantasTexto{
-        font-size: 14px;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    .plantasTexto, .accordion-body p, .card-body p{
-        font-size: 20px;
-    }
-    .plantas h2, .cuidados h2, .eleccion h2, #formulario h2{
-        font-size: 50px !important;
-    }
-}
-
-@media screen and (min-width: 1441px) {
-    .plantasTexto, .accordion-body p, .card-body p{
-        font-size: 24px;
-    }
-    .plantas h2, .cuidados h2, .eleccion h2, #formulario h2{
-        font-size: 80px !important;
-    }
+    --color-1: #515F08;
+    --color-2: #F8FFD0;
+    --color-3: #323A0D;
 }
 
 @keyframes rotar{
@@ -185,10 +30,215 @@ footer{
     }
 }
 
+@keyframes salto{
+    0%{
+        transform: translateY(-20%);
+    }
+    50%{
+        transform: translateY(0%);
+    }
+    100%{
+        transform: translateY(-20%);
+    }
+}
+
+.navbar{
+    background-color: var(--color-2);
+}
+
+.navbar li a{
+    color: var(--color-1);
+    font-family: var(--font-1);
+    border-bottom: 3px solid var(--color-2);
+}
+
+.navbar li a:hover{
+    border-bottom: 3px solid var(--color-1);
+    transform: scale(1.1);
+    color: var(--color-1);
+    transition: all 0.3s;
+}
+
+.navbar li a:focus{
+    border-bottom: 3px solid var(--color-1);
+    transform: scale(1.1);
+    color: var(--color-1);
+}
+
+.navbar img{
+    height: 70px;
+}
+
+.navbar-toggler{
+    --bs-navbar-toggler-border-color: var(--color-2);
+}
+
+.navbar-toggler-icon{
+    background-color: var(--color-2);
+}
+
+.nav-item img{
+    width: 30px;
+}
+
+p, label{
+    font-family: var(--font-2);
+}
+
+body{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(./src/img/background.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.plantas h2, .cuidados h2, .eleccion h2, #formulario h2{
+    color: var(--color-1);
+    font-family: var(--font-1);
+    animation: salto 2s infinite;
+}
+
+h3{
+    font-family: var(--font-1);
+}
+
+.card-body h3, .card-body p{
+    color: var(--color-1);
+}
+
+.card-body p{
+    font-size: 18px;
+}
+
+#formulario p{
+    font-size: 18px;
+}
+
+.card-body{
+    background-color: var(--color-2);
+}
+
+#formulario{
+    color: var(--color-1);
+}
+
+button{
+    background-color: var(--color-1);
+    color: var(--color-2);
+}
+
+.accordion-item button{
+    --bs-accordion-btn-bg: var(--color-2);
+    --bs-accordion-active-bg: var(--color-1);
+    --bs-accordion-btn-color: var(--color-3);
+    --bs-accordion-active-color: var(--color-2);
+}
+
+.accordion-body p, footer p{
+    color: var(--color-1);
+}
+
+footer{
+    background-color: var(--color-2);
+}
+
+.contenedorPlantas{
+    position: relative;  
+}
+
+.img-container{
+    position: relative;
+}
+
+.img-container h3{
+    position: absolute;
+    background-color: var(--color-2);
+    top: 0;
+    text-align: center;
+    color: var(--color-1);
+}
+
+.img-container .flecha{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.plantasTexto{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--color-2);
+    font-size: 18px;
+    text-decoration: none;
+    color: var(--color-1);
+    font-weight: 600;
+    height: 0;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.plantasTexto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.accordion-body p{
+    font-size: 18px;
+}
+
+.contenedorPlantas:hover{
+    .plantasTexto{
+        height: 100%;
+        opacity: 1;
+    }
+}
+
 .imagen-acordeon{
     animation: rotar 1s infinite;
 }
 
 .imagen-acordeon2{
     animation: rotar2 1s infinite;
+}
+
+.container-carrusel{
+    background-image: url(./src/img/fondocarrusel.svg);
+    background-size: cover;
+    background-position: center;
+}
+
+@media screen and (max-width: 426px) {
+    .plantasTexto{
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .plantas h2, .cuidados h2, .eleccion h2, #formulario h2{
+        font-size: 34px;
+    }
+    .navbar img{
+        height: 50px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .plantasTexto, .accordion-body p, .card-body p, #formulario p{
+        font-size: 20px;
+    }
+    .plantas h2, .cuidados h2, .eleccion h2, #formulario h2{
+        font-size: 40px;
+    }
+}
+
+@media screen and (min-width: 1441px) {
+    .plantasTexto, .accordion-body p, .card-body p, #formulario p{
+        font-size: 24px;
+    }
+    .plantas h2, .cuidados h2, .eleccion h2, #formulario h2{
+        font-size: 80px;
+    }
 }
